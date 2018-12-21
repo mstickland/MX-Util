@@ -11,6 +11,9 @@ namespace MX.Util.CLILib.UIOptions
     {
         IEnumerable<IUIOption> ActiveOptions { get; }
         IEnumerable<IUIOption> Options { get; }
+
+        IUIOption this[string optionTitle] {  get; }
+
     }
 
 }

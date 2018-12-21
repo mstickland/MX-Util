@@ -16,6 +16,8 @@ namespace MX.Util.CLILib.UIOptions
         private UIOptionFactory _factory = new UIOptionFactory();
         private List<IUIOption> _options = new List<IUIOption>();
 
+        public IUIOption this[string optionTitle] => _options.FirstOrDefault(opt => String.Equals(opt.CleanTitle, optionTitle, StringComparison.CurrentCultureIgnoreCase));
+
         public static UIOptionCollection ToCollection(UIOption option)
         {
             var collection = new UIOptionCollection();

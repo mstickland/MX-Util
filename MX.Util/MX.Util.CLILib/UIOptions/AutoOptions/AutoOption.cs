@@ -15,17 +15,18 @@ namespace MX.Util.CLILib.UIOptions.AutoOptions
         public int PrefixNumber { get; internal set; }
         public int ShortcutCharacterIndex { get; internal set; }
 
-        public string OriginalTitle { get; private set; }
-        public override string Title => ParsedTitle(OriginalTitle);
+        private string _cleanTitle;
+        public override string CleanTitle => _cleanTitle;
+        public override string Title => ParsedTitle(CleanTitle);
         
         public AutoOption(string title)
         {
-            OriginalTitle = title;
+            _cleanTitle = title;
         }
 
         public override bool IsMatch(ICLICommand command)
         {
-            return ( UseShortcutCharacter && StrCompare(command.Command, OriginalTitle[ShortcutCharacterIndex].ToString()) ) ||
+            return ( UseShortcutCharacter && StrCompare(command.Command, CleanTitle[ShortcutCharacterIndex].ToString()) ) ||
                    ( UsePrefixNumber && StrCompare(command.Command, PrefixNumber.ToString()) );
         }
 

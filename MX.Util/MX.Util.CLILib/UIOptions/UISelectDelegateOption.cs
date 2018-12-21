@@ -10,6 +10,7 @@ namespace MX.Util.CLILib.UIOptions
     {
         public bool Enabled {  get; set; } = true;
         public abstract string Title { get; }
+        public abstract string CleanTitle { get; }
         public Action<ICLICommand> SelectFunc { get; protected internal set; }
 
         public abstract bool IsMatch(ICLICommand command);

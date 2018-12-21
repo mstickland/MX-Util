@@ -10,6 +10,7 @@ namespace MX.Util.CLILib.UIOptions
     {
         private string _title;
         public override string Title => _title;
+        public override string CleanTitle => _title;
         public IEnumerable<string> Triggers {  get; internal set;}
 
         //TODO: public version? Triggers needs to be set. Or default in return

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MX.Util.MathUtil", "MX.Util
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MX.Util.Tests", "MX.Util.Tests\MX.Util.Tests.csproj", "{C811879E-2F0B-4475-BF63-BBC755291AC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MX.Util.Serialization", "MX.Util.Serialization\MX.Util.Serialization.csproj", "{F6F936B7-C867-4C4B-ABD2-A53A6C1D1215}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C811879E-2F0B-4475-BF63-BBC755291AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C811879E-2F0B-4475-BF63-BBC755291AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C811879E-2F0B-4475-BF63-BBC755291AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F936B7-C867-4C4B-ABD2-A53A6C1D1215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F936B7-C867-4C4B-ABD2-A53A6C1D1215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F936B7-C867-4C4B-ABD2-A53A6C1D1215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F936B7-C867-4C4B-ABD2-A53A6C1D1215}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

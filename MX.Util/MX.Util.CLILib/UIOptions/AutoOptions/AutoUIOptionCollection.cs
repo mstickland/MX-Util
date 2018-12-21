@@ -26,6 +26,8 @@ namespace MX.Util.CLILib.UIOptions.AutoOptions
 
         public AutoOptionMode Mode {  get; private set; }
 
+        public IUIOption this[string optionTitle] => _options.FirstOrDefault(opt => String.Equals(opt.CleanTitle, optionTitle, StringComparison.CurrentCultureIgnoreCase));
+
 
         public AutoUIOptionCollection()
         {

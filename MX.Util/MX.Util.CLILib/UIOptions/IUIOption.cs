@@ -9,6 +9,7 @@ namespace MX.Util.CLILib.UIOptions
     public interface IUIOption
     {
         string Title { get; }
+        string CleanTitle { get; }
         bool IsMatch(ICLICommand command);
         void Select(ICLICommand command);
         bool Enabled {  get; set; }

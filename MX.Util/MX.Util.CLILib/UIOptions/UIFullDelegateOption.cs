@@ -10,6 +10,7 @@ namespace MX.Util.CLILib.UIOptions
     {
         private string _title;
         public override string Title => _title;
+        public override string CleanTitle => _title;
         public Func<ICLICommand, bool> MatchDelegate { get; internal set; }
 
         public UIFullDelegateOption(string title) => _title = title;
